@@ -1,3 +1,7 @@
+# =====================================================================
+# Git Ignore — AI in Cyber Security Capstone Project
+# =====================================================================
+
 # Python Virtual Environments
 .venv/
 venv/
@@ -18,17 +22,25 @@ __pycache__/
 .idea/
 *.swp
 *.swo
+*~
 
-# OS generated files
+# OS-generated files
 .DS_Store
 Thumbs.db
 ehthumbs.db
+desktop.ini
 
 # Logs and outputs
 *.log
 logs/
 
-# Model checkpoints / Large artifacts (optional)
+# Model binaries (too large for Git)
 *.pkl
 *.joblib
 *.h5
+*.pt
+*.pth
+*.onnx
+
+# Environment files
+.env
